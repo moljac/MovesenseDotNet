@@ -2,10 +2,8 @@
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
-using MdsLibrary.Api;
 using System.Diagnostics;
 using System.Windows.Input;
-using Xamarin.Forms;
 using Plugin.Movesense;
 
 namespace SampleApp.ViewModels

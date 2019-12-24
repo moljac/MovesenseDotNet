@@ -67,7 +67,8 @@ namespace SampleApp.ViewModels
             // Only interested in Movesense devices
             if (result.Device.Name != null)
             {
-                if (result.Device.Name.StartsWith("Movesense"))
+                Console.WriteLine($"Device Name = {result.Device.Name}");
+                if (result.Device.Name.StartsWith("Movesense") || result.Device.Name.StartsWith("Polar"))
                 {
                     var dev = this.Devices.FirstOrDefault(x => x.Uuid.Equals(result.Device.Uuid));
                     if (dev != null)
